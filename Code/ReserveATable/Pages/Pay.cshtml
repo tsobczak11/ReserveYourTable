@@ -1,0 +1,35 @@
+@page
+@model OrderModel
+@{
+    ViewData["Title"] = "Pay";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Pay</h1>
+    <p>Enter Payment Information Below</p>
+</div>
+
+<form action="action_page.php" style="border:1px solid #ccc">
+    <div class="container">
+        <p>Please fill in this information to place your order now</p>
+        <br>
+        <p>Your total will be: $30.95</p>
+        <label for="creditNum"><b>Credit Card  Number:</b></label>
+        <input type="text" placeholder="Enter 16 digit #" name="creditNum" required>
+        <br>
+        <label for="expDate"><b>Expiration date:</b></label>
+        <input type="text" placeholder="Enter Expiration #" name="expDate" required>
+        <br>
+        <label for="cvv"><b>CVV:</b></label>
+        <input type="text" placeholder="Enter CVV" name="cvv" required>
+        <br>
+        <div class="clearfix">
+            <a href="/Order">
+                <button type="button" class="next">Place Order</button>
+            </a>
+            <a href="/Index">
+                <button type="button" class="exit">Exit</button>
+            </a>
+        </div>
+    </div>
+</form>

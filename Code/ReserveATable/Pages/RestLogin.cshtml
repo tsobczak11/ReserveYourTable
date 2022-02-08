@@ -1,0 +1,27 @@
+﻿@page
+@model RestLoginModel
+@{
+    ViewData["Title"] = "Resturaunt Login";
+    Layout = "_LayoutForRestaurant";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Back!</h1>
+    <p>Please Login to Continue</p>
+</div>
+
+<div class="text-center">
+    <form id="login-form">
+        <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+        <br>
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember Me
+        </label>
+    </form>
+    <br>
+    <a href="/RestAction">
+        <button type="button" class="restLogin">Login</button>
+    </a>
+</div>
+

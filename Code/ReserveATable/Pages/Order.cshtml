@@ -1,0 +1,37 @@
+@page
+@model OrderModel
+@{
+    ViewData["Title"] = "Order";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Order</h1>
+    <p>Review the menu and select the items you would like to order</p>
+</div>
+
+<form action="action_page.php" style="border:1px solid #ccc">
+    <div class="container">
+
+        <p>4 Italian beef sandwhiches</p>
+		<br>
+		<p>1 Hot dog w/ peppers</p>
+		<br>
+		<p>3 Cheese fries</p>
+		<br>
+		<p>1 Caesar salad</p>
+		<br>
+		<p>4 Strawberry milkshakes</p>
+		<br>
+		<p>1 Chocolate cake slice</p>
+		<br>
+
+        <div class="clearfix">
+            <a href="/Pay">
+                <button type="button" class="next">Next</button>
+            </a>
+            <a href="/Index">
+                <button type="button" class="exit">Exit</button>
+            </a>
+        </div>
+    </div>
+</form>

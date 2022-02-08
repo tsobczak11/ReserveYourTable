@@ -1,0 +1,33 @@
+﻿@page
+@model MenuUploadModel
+@{
+    ViewData["Title"] = "Menu Upload";
+    Layout = "_LayoutForRestaurant";
+}
+
+<style>
+    .chooseFile{
+        position: relative;
+        top:-4px;
+    }
+</style>
+
+
+<div class="text-center">
+    <h1 class="display-4">Menu</h1>
+    <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="text-center">
+        <p>Press submit to save changes</p>
+        <hr>
+
+        <a href="/UpdateMenu"> <button type="button" class="chooseFile">Choose File</button> </a>
+
+
+        <div class="clearfix">
+            <a href="/UpdateMenu"> <button type="button" class="submitInfo">Submit</button> </a>
+        </div>
+    </div>
+    </form>
+</div>
+
+

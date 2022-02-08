@@ -1,0 +1,28 @@
+﻿@page
+@model MenuDeleteModel
+@{
+    ViewData["Title"] = "Menu Delete";
+    Layout = "_LayoutForRestaurant";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Menu</h1>
+    <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="text-center">
+        <p>Press submit to delete</p>
+        <hr>
+
+        <label for="titleMenu"><b>Enter Title to Delete</b></label>
+        <input type="text" placeholder="Enter Title" name="titleMenu">
+
+        <br>
+
+        <div class="clearfix">
+            <a href="/RestUpdateMenuUpdate"> <button type="button" class="submitInfo">Submit</button> </a>
+        </div>
+    </div>
+    </form>
+</div>
+
+

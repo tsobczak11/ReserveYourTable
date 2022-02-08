@@ -1,0 +1,37 @@
+﻿@page
+@model UpdateContactModel
+@{
+    ViewData["Title"] = "Contact Information";
+    Layout = "_LayoutForRestaurant";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Contact Information</h1>
+</div>
+
+    <form action="action_page.php" style="border:1px solid #ccc">
+    <div class="text-center">
+        <p>Edit information and press submit to save changes</p>
+        <hr>
+
+        <label for="emailAddress"><b>Update Email Address</b></label>
+        <input type="text" placeholder="Enter New Email Address" name="emailAddress">
+
+        <br>
+
+        <label for="buildingAddress"><b>Update Address</b></label>
+        <input type="text" placeholder="Enter New address" name="buildingAddress">
+
+        <br>
+
+        <label for="phoneNum"><b>Update Phone Number</b></label>
+        <input type="text" placeholder="Enter New Phone Number" name="phoneNum">
+
+        <br>
+
+        <div class="clearfix">
+            <a href="/RestUpdate"> <button type="button" class="submitInfo">Submit</button> </a>
+        </div>
+    </div>
+</form>
+

@@ -1,0 +1,39 @@
+﻿@page
+@model MenuAddModel
+@{
+    ViewData["Title"] = "Menu Add";
+    Layout = "_LayoutForRestaurant";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Menu</h1>
+    
+    <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="text-center">
+        <p>Edit information and press submit to save changes</p>
+        <hr>
+
+        <label for="priceMenu"><b>Enter Price</b></label>
+        <input type="text" placeholder="Enter Price" name="priceMenu">
+
+        <br>
+
+        <label for="titleMenu"><b>Enter Title</b></label>
+        <input type="text" placeholder="Enter Title" name="titleMenu">
+
+        <br>
+
+        <label for="descripMenu"><b>Enter Description</b></label>
+        <input type="text" placeholder="Enter Description" name="descripMenu">
+
+        <br>
+
+        <div class="clearfix">
+            <a href="/UpdateMenu"> <button type="button" class="submitInfo">Submit</button> </a>
+        </div>
+    </div>
+    </form>
+</div>
+
+

@@ -1,0 +1,41 @@
+﻿@page
+@model RestConfirmModel
+@{
+    ViewData["Title"] = "Resturaunt Confirm";
+    Layout = "_LayoutForRestaurant";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Confirm Payment</h1>
+</div>
+
+<script>
+    function toggle_visibility() {
+        var form = document.getElementById('paymentForm');
+        var paymentConfirm = document.getElementById('paymentConfirm');
+        if (form.hidden == 0) {
+            form.hidden = 1;
+            paymentConfirm.hidden = 0;
+        }
+        else
+            form.hidden = 1;
+    }
+</script>
+
+<div class="container" id="paymentForm">
+    <label><b>Date:</b></label>
+    <label>11/05/2021:1:30PM</label><br>
+
+    <label><b>Credit Card Number:</b></label>
+    <label>****-****-****-4049</label><br>
+
+    <label><b>Total:</b></label>
+    <label>$72.46</label><br>
+    <button type="button" onclick="toggle_visibility()">Confirm Payment</button>
+
+</div>
+
+<div id="paymentConfirm" hidden>
+    <label><b>Payment Confirmed!</b></label>
+</div>
+

@@ -1,0 +1,72 @@
+﻿@page
+@model UpdateMenuModel
+@{
+    ViewData["Title"] = "Contact Menu";
+    Layout = "_LayoutForRestaurant";
+}
+
+<style>
+    .updateMenu{
+    background-color: #4CAF50;
+    font-size: 24px;
+    height:300px;
+    width:500px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .addMenu{
+    background-color: #FFFF00;
+    font-size: 24px;
+    height:300px;
+    width:500px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .deleteMenu{
+    background-color: #0000FF;
+    font-size: 24px;
+    height:300px;
+    width:500px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .uploadMenu{
+    background-color: #FFA500;
+    font-size: 24px;
+    height:300px;
+    width:500px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .updateMenu:hover, .addMenu:hover, .deleteMenu:hover, .uploadMenu:hover {
+    background-color: #D3D3D3;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    
+    
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Menu</h1>
+    <p>Please choose an option to modify menu</p>
+</div>
+
+<div class="text-center">
+    <a href="/MenuUpdate">
+        <button type="button" class="updateMenu">UPDATE <br> MENU</button>
+    </a>
+    <a href="/MenuAdd">
+        <button type="button" class="addMenu">ADD <br> ITEM</button>
+    </a>
+</div>
+
+<div class="text-center">
+    <a href="/MenuDelete">
+        <button type="button" class="deleteMenu">DELETE</button>
+    </a>
+    <a href="/MenuUpload">
+        <button type="button" class="uploadMenu">UPLOAD</button>
+    </a>
+</div>
+

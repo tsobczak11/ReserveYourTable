@@ -1,0 +1,49 @@
+﻿@page
+@model MenuUpdateModel
+@{
+    ViewData["Title"] = "Menu Update";
+    Layout = "_LayoutForRestaurant";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Menu</h1>
+
+    <div class="text-center">
+    <h1 class="display-4">Update Menu Information</h1>
+    <p>Please select an option to update</p>
+
+        <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="text-center">
+        <p>Edit information and press submit to save changes</p>
+        <hr>
+
+        <label for="titleUpdate"><b>Enter Title to Change</b></label>
+        <input type="text" placeholder="Enter Title" name="titleUpdate">
+
+        <br>
+        <br>
+
+        <label for="priceMenu"><b>Update Price</b></label>
+        <input type="text" placeholder="Enter New Price" name="priceMenu">
+
+        <br>
+
+        <label for="titleMenu"><b>Update Title</b></label>
+        <input type="text" placeholder="Enter Title" name="titleMenu">
+
+        <br>
+
+        <label for="descripMenu"><b>Update Description</b></label>
+        <input type="text" placeholder="Enter New Description" name="descripMenu">
+
+        <br>
+
+        <div class="clearfix">
+            <a href="/UpdateMenu"> <button type="button" class="submitInfo">Submit</button> </a>
+        </div>
+    </div>
+</form>
+</div>
+
+

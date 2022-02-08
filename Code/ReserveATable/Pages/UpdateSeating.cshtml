@@ -1,0 +1,34 @@
+﻿@page
+@model UpdateSeatingModel
+@{
+    ViewData["Title"] = "Resturaunt Seating";
+    Layout = "_LayoutForRestaurant";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Update Seating Information</h1>
+    <p>Please select an option to update</p>
+
+        <form action="action_page.php" style="border:1px solid #ccc">
+    <div class="text-center">
+        <p>Edit information and press submit to save changes</p>
+        <hr>
+
+        <label for="seatCount"><b>Update Number of Seats</b></label>
+        <input type="text" placeholder="Enter New Number of Seats" name="seatCount">
+
+        <br>
+
+        <label for="numHours"><b>Update Business Hours</b></label>
+        <input type="text" placeholder="Enter New Hours" name="numHours">
+
+        <br>
+
+        <div class="clearfix">
+            <a href="/RestUpdate"> <button type="button" class="submitInfo">Submit</button> </a>
+        </div>
+    </div>
+</form>
+</div>
+
+

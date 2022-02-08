@@ -1,0 +1,49 @@
+﻿@page
+@model UpdateReservationModel
+@{
+    ViewData["Title"] = "Resturaunt Manage";
+    Layout = "_LayoutForRestaurant";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Restaurant Manage</h1>
+</div>
+
+<div class="" text-center"">
+    <h1 class="" display-4"">Update Reservation</h1>
+</div>
+
+<script>
+    function toggle_visibility() {
+        var form = document.getElementById('reservationForm');
+        var searchRes = document.getElementById('searchReservation');
+        if (form.hidden == 1) {
+            form.hidden = 0;
+            searchRes.hidden = 1;
+        }
+        else
+            form.hidden = 1;
+    }
+</script>
+
+<div id="searchReservation">
+    <label><b>Enter Name on Reservation</b></label>
+    <input type="text" placeholder="Name" required />
+    <button type="button" onclick="toggle_visibility()">Submit</button>
+</div>
+
+<form action="action_page.php" style="border:1px solid #ccc" id="reservationForm" hidden>
+    <label for="reservationName"><b>Name:</b></label>
+    <input type="text" placeholder="Enter Name" name="reservationName" required>
+    <br>
+    <label for="reservationDateTime"><b>Date & Time:</b></label>
+    <input type="datetime-local" name="reservationDateTime" required>
+    <br>
+    <label for="reservationPartySize"><b>Party Size:</b></label>
+    <input type="number" value="1" min="1" placeholder="Enter Size of Party" name="reservationPartySize" required>
+    <br>
+    <div class="clearfix">
+        <button type="reset" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Submit</button>
+    </div>
+</form>

@@ -1,0 +1,34 @@
+@page
+@model OrderModel
+@{
+    ViewData["Title"] = "Reserve";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Reserve Your Table</h1>
+    <p>Find the date and time that works best for you and your friends and family</p>
+</div>
+
+<form action="action_page.php" style="border:1px solid #ccc">
+    <div class="container">
+        <p>Please fill in this information to Reserve Your Table now</p>
+
+        <label for="numGuest"><b>Number of Guest:</b></label>
+        <input type="text" placeholder="4" name="numGuest" required>
+        <br>
+        <label for="timeTable"><b>Time of dine-in:</b></label>
+        <input type="text" placeholder="8:30pm" name="timeTable" required>
+        <br>
+        <label for="dateTable"><b>Date of dine-in:</b></label>
+        <input type="text" placeholder="10/08/21" name="dateTable" required>
+        <br>
+        <div class="clearfix">
+            <a href="/Order">
+                <button type="button" class="next">Next</button>
+            </a>
+            <a href="/Index">
+                <button type="button" class="exit">Exit</button>
+            </a>
+        </div>
+    </div>
+</form>

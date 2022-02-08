@@ -1,0 +1,19 @@
+﻿@page
+@model ReserveATable.Pages.LoginModel
+@{
+}
+
+<div class="text-center">
+    <h1 id="login-header">Login</h1>
+
+    <form id="login-form">
+        <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+        <br>
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember Me
+        </label>
+        <br>
+        <input type="submit" value="Login" id="login-form-submit">
+    </form>
+</div>
