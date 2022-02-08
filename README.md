@@ -1,4 +1,4 @@
-# **Reserve Your Table Project**
+# **Reserve Your Table**
 ## **by: Thomas Sobczak, Ryan Thommes, Ramzi Rimawi, Matthew Alvero**
 
 &emsp;*The Reserve Your Table project* was originally thought out and developed during the COVID-19 pandemic era. The application is designed to help people dine into their favorite restaurants without having to worry about unknown interactions. During these especially hard times, it is important to keep interactions with other people to the minimum by having all those interactions done virtually through the application itself. The application was first proposed to limit virus transmission. However, the ability to reserve, order, and pay all on one system over the internet is a great and convenient way for people to ease their way back into dining in-person.
